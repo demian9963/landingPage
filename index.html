@@ -1,315 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aurelia - Automatiza tus ventas en redes sociales con un chatbot inteligente." />
-    <title>Aurelia | Chatbot de Ventas y Facturación</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Preload fonts for better performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  </head>
-  <body>
 
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a href="#" class="site-header__logo">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-header__logo-icon">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          Aurelia
-        </a>
-        <nav class="site-nav" aria-label="Navegación principal">
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a href="#features" class="site-nav__link">Características</a></li>
-            <li class="site-nav__item"><a href="#pricing" class="site-nav__link">Precios</a></li>
-            <li class="site-nav__item"><a href="#about" class="site-nav__link">Nosotros</a></li>
-          </ul>
-        </nav>
-        <div class="site-header__actions">
-          <a href="#" class="btn btn--secondary">Iniciar Sesión</a>
-          <a href="#signup" class="btn btn--primary">Empezar Gratis</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aurelia - Asistente virtual inteligente para cadenas odontológicas. Agenda, reagenda y cancela citas automáticamente." />
+  <title>Aurelia | Chatbot para Odontologías</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!-- Preload fonts for better performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#" class="site-header__logo">
+        <div class="site-header__logo-icon"
+          style="width: 48px; height: 48px; background-color: var(--color-primary); -webkit-mask: url('img/icono.png') no-repeat center / contain; mask: url('img/icono.png') no-repeat center / contain; transform: scale(1.5); margin-right: -4px; margin-left: 4px;">
+        </div>
+        Aurelia
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a href="#features" class="site-nav__link">Características</a></li>
+          <li class="site-nav__item"><a href="#pricing" class="site-nav__link">Precios</a></li>
+          <li class="site-nav__item"><a href="#about" class="site-nav__link">Nosotros</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 id="hero-heading" class="hero__heading">
+            Llena tu agenda<br />
+            <span class="text-gradient">en piloto automático.</span>
+          </h1>
+          <p class="hero__subheading">
+            Aurelia es el asistente inteligente que agenda, reagenda y cancela citas por ti. Lee tus propios manuales
+            para responder dudas instantáneamente y domina el funcionamiento exacto de tu clínica.
+          </p>
+          <div class="hero__cta-group">
+            <a href="#demo" class="btn btn--primary btn--lg">Solicitar Demo</a>
+            <a href="#contact" class="btn btn--secondary btn--lg">Hablar con Ventas</a>
+          </div>
+          <div class="hero__trust">
+            <p>Optimizando la agenda en múltiples sucursales</p>
+            <div class="hero__logos">
+              <span class="logo-placeholder">WhatsApp</span>
+              <span class="logo-placeholder">Instagram</span>
+              <span class="logo-placeholder">Facebook Messenger</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <!-- Animated Workflow Container -->
+          <!-- Monitor Mockup Container -->
+          <div class="monitor-mockup">
+            <div class="monitor-screen">
+              <video autoplay loop muted playsinline class="monitor-video">
+                <source src="img/Animación_Asistente.mp4" type="video/mp4" />
+                Tu navegador no soporta el tag de video.
+              </video>
+            </div>
+            <div class="monitor-stand"></div>
+            <div class="monitor-base"></div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="site-main">
-
-      <!-- Hero Section -->
-      <section class="hero" aria-labelledby="hero-heading">
-        <div class="hero__inner">
-          <div class="hero__content">
-            <h1 id="hero-heading" class="hero__heading">
-              Convierte comentarios<br />
-              <span class="text-gradient">en ventas reales.</span>
-            </h1>
-            <p class="hero__subheading">
-              Aurelia interactúa con tus clientes 24/7. Cuando el cliente envía su comprobante, 
-              el bot espera tu aprobación manual para liberar el producto. Control total.
-            </p>
-            <div class="hero__cta-group">
-              <a href="#signup" class="btn btn--primary btn--lg">Prueba Gratis 14 Días</a>
-              <a href="#demo" class="btn btn--secondary btn--lg">Ver Demo en Vivo</a>
-            </div>
-            <div class="hero__trust">
-              <p>Integrado con tus plataformas favoritas</p>
-              <div class="hero__logos">
-                <span class="logo-placeholder">Instagram</span>
-                <span class="logo-placeholder">Facebook</span>
-                <span class="logo-placeholder">WhatsApp</span>
-                <span class="logo-placeholder">TikTok</span>
-              </div>
-            </div>
-          </div>
-          <div class="hero__image-wrapper">
-            <!-- Animated Workflow Container -->
-            <div class="workflow-animation">
-              
-              <!-- Scene 1: The Facebook Ad -->
-              <div class="scene-ad">
-                <div class="ad-card">
-                  <!-- Facebook top bar -->
-                  <div class="fb-topbar">
-                    <div class="fb-logo">
-                      <svg viewBox="0 0 24 24" width="20" height="20" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    </div>
-                    <div class="fb-nav-dots">
-                      <span></span><span></span><span></span>
-                    </div>
-                  </div>
-                  <!-- Post Header -->
-                  <div class="ad-header">
-                    <div class="ad-avatar">
-                      <span>T</span>
-                    </div>
-                    <div class="ad-meta">
-                      <div class="ad-name">Tu Tienda Online 🛍️</div>
-                      <div class="ad-label">
-                        <svg width="10" height="10" viewBox="0 0 12 12" fill="#65676B"><circle cx="6" cy="6" r="5" stroke="#65676B" stroke-width="1" fill="none"/><path d="M6 3v3l2 2" stroke="#65676B" stroke-width="1.2" stroke-linecap="round"/></svg>
-                        Hace 2 h · <span class="ad-sponsored-badge">Patrocinado</span> · 🌐
-                      </div>
-                    </div>
-                    <div class="ad-menu">···</div>
-                  </div>
-                  <!-- Post Caption -->
-                  <div class="ad-caption">
-                    🔥 ¡Oferta limitada! Nuestro producto estrella con <strong>40% de descuento</strong>. Escríbenos por WhatsApp y lo recibís en casa. 📦
-                  </div>
-                  <!-- Product Image -->
-                  <div class="ad-img-placeholder">
-                    <div class="ad-product-visual">
-                      <span class="product-emoji">🚀</span>
-                      <div class="product-badge">-40%</div>
-                    </div>
-                  </div>
-                  <!-- Link Preview bar -->
-                  <div class="ad-link-bar">
-                    <div class="ad-link-info">
-                      <div class="ad-link-domain">tutienda.com</div>
-                      <div class="ad-link-title">Producto Estrella – Oferta Especial</div>
-                    </div>
-                    <!-- WhatsApp CTA Button -->
-                    <div class="ad-cta-btn ad-cta-btn--wa" id="wa-btn">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                      Enviar Mensaje
-                    </div>
-                  </div>
-                  <!-- FB Reactions bar -->
-                  <div class="ad-reactions">
-                    <span>👍 ❤️ 😮  <em>1.2k</em></span>
-                    <span>248 comentarios · 87 veces compartido</span>
-                  </div>
-                </div>
-                <!-- Cursor Animation pointing to WhatsApp button -->
-                <div class="cursor-pointer">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 2v19l4.5-4.5 3.5 8.5 2.5-1-3.5-8.5H22L8 2z" fill="white" stroke="black" stroke-width="2" stroke-linejoin="round"/></svg>
-                </div>
-              </div>
-
-              <!-- Scene 2: The Phone Chat -->
-              <div class="scene-phone">
-                <div class="phone-mockup">
-                  <div class="phone-notch"></div>
-                  <div class="chat-screen">
-                    <!-- Message 1: User -->
-                    <div class="msg-bubble msg-bubble--user">
-                      Hola, me interesa el producto 👋
-                    </div>
-                    <!-- Message 2: Bot Response -->
-                    <div class="msg-bubble msg-bubble--bot">
-                      ¡Hola! Son $29. Por favor envía tu comprobante de pago 👇
-                    </div>
-                    <!-- Message 3: User sends Proof -->
-                    <div class="msg-bubble msg-bubble--user msg-bubble--proof">
-                      <div class="mini-invoice">
-                        <span class="icon">📎</span> Comprobante.jpg
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+    <!-- Features Section -->
+    <section class="section features" id="features" aria-labelledby="features-heading">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="features-heading" class="section__heading">Tu recepcionista virtual 24/7</h2>
+          <p class="section__subheading">
+            Aurelia elimina los tiempos de espera y optimiza la capacidad de tus consultorios de forma automática y
+            precisa.
+          </p>
         </div>
-      </section>
 
-      <!-- Features Section -->
-      <section class="section features" id="features" aria-labelledby="features-heading">
-        <div class="section__inner">
-          <div class="section__header">
-            <h2 id="features-heading" class="section__heading">Tu piloto automático de ventas</h2>
-            <p class="section__subheading">
-              Olvídate de responder "precio" mil veces. Aurelia se encarga de la conversación y el cierre.
-            </p>
-          </div>
-          
-          <div class="features__grid">
-            <!-- Feature 1 -->
-            <div class="feature-card">
-              <div class="feature-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                </svg>
-              </div>
-              <h3 class="feature-card__title">Respuesta Inmediata</h3>
-              <p class="feature-card__body">Aurelia detecta la intención de compra en comentarios y DMs, respondiendo al instante con la info correcta.</p>
-            </div>
-            
-            <!-- Feature 2 -->
-            <div class="feature-card">
-              <div class="feature-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                  <polyline points="10 9 9 9 8 9"></polyline>
-                </svg>
-              </div>
-              <h3 class="feature-card__title">Recepción de Pagos</h3>
-              <p class="feature-card__body">Aurelia recibe la factura o comprobante que envía el cliente y lo archiva automáticamente para tu revisión.</p>
-            </div>
-            
-            <!-- Feature 3 -->
-            <div class="feature-card">
-              <div class="feature-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-              </div>
-              <h3 class="feature-card__title">Aprobación Manual</h3>
-              <p class="feature-card__body">Nada sale sin tu OK. Revisa el comprobante, haz clic en Aprobar y el bot entrega el producto digital al instante.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="features__grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
 
-      <!-- Pricing Section -->
-      <section class="section pricing" id="pricing" aria-labelledby="pricing-heading">
-        <div class="section__inner">
-          <div class="section__header">
-            <h2 id="pricing-heading" class="section__heading">Planes flexibles</h2>
-            <p class="section__subheading">Comienza pequeño, escala cuando lo necesites. Cancela en cualquier momento.</p>
+            <h3 class="feature-card__title">Agendamiento Inteligente</h3>
+            <p class="feature-card__body">Sincronización en tiempo real con tus agendas odontológicas. Los pacientes
+              reservan su turno directamente por chat.</p>
           </div>
 
-          <div class="pricing__grid">
-            <!-- Basic Plan -->
-            <div class="pricing-card">
-              <h3 class="pricing-card__title">Starter</h3>
-              <div class="pricing-card__price">$0 <span class="period">/mes</span></div>
-              <p class="pricing-card__desc">Para freelancers y pruebas.</p>
-              <ul class="pricing-card__features">
-                <li>1 Usuario</li>
-                <li>5 Proyectos</li>
-                <li>Soporte por comunidad</li>
-              </ul>
-              <a href="#" class="btn btn--secondary btn--full">Comenzar Gratis</a>
-            </div>
+          <!-- Feature 2 -->
+          <div class="feature-card">
 
-            <!-- Pro Plan -->
-            <div class="pricing-card pricing-card--featured">
-              <div class="pricing-card__badge">Popular</div>
-              <h3 class="pricing-card__title">Pro</h3>
-              <div class="pricing-card__price">$29 <span class="period">/mes</span></div>
-              <p class="pricing-card__desc">Para equipos en crecimiento.</p>
-              <ul class="pricing-card__features">
-                <li>Hasta 10 Usuarios</li>
-                <li>Proyectos Ilimitados</li>
-                <li>Analíticas Avanzadas</li>
-                <li>Soporte Prioritario</li>
-              </ul>
-              <a href="#" class="btn btn--primary btn--full">Elegir Pro</a>
-            </div>
-
-            <!-- Enterprise Plan -->
-            <div class="pricing-card">
-              <h3 class="pricing-card__title">Enterprise</h3>
-              <div class="pricing-card__price">Custom</div>
-              <p class="pricing-card__desc">Para organizaciones grandes.</p>
-              <ul class="pricing-card__features">
-                <li>Usuarios Ilimitados</li>
-                <li>SSO & Audit Logs</li>
-                <li>SLA Garantizado</li>
-                <li>Manager Dedicado</li>
-              </ul>
-              <a href="#" class="btn btn--secondary btn--full">Contactar Ventas</a>
-            </div>
+            <h3 class="feature-card__title">Gestión Autónoma</h3>
+            <p class="feature-card__body">¿Un imprevisto? Aurelia coordina cancelaciones y reagenda a los pacientes
+              rápidamente para no dejar huecos en la jornada.</p>
           </div>
-        </div>
-      </section>
 
-      <!-- CTA Section -->
-      <section class="cta-section">
-        <div class="cta-section__inner">
-          <h2 class="cta-section__heading">¿Listo para transformar tu flujo de trabajo?</h2>
-          <p class="cta-section__subheading">Únete a más de 10,000 equipos que ya usan Aurelia hoy.</p>
-          <a href="#signup" class="btn btn--primary btn--lg">Comenzar Ahora -></a>
-        </div>
-      </section>
+          <!-- Feature 3 -->
+          <div class="feature-card">
 
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer__inner">
-        <div class="site-footer__col">
-          <a href="#" class="site-footer__logo">Aurelia</a>
-          <p class="site-footer__desc">Software inteligente para negocios modernos.</p>
-        </div>
-        <div class="site-footer__col">
-          <h4 class="site-footer__heading">Producto</h4>
-          <ul class="site-footer__links">
-            <li><a href="#">Características</a></li>
-            <li><a href="#">Integraciones</a></li>
-            <li><a href="#">Precios</a></li>
-          </ul>
-        </div>
-        <div class="site-footer__col">
-          <h4 class="site-footer__heading">Compañía</h4>
-          <ul class="site-footer__links">
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Carreras</a></li>
-          </ul>
-        </div>
-        <div class="site-footer__col">
-          <h4 class="site-footer__heading">Legal</h4>
-          <ul class="site-footer__links">
-            <li><a href="#">Privacidad</a></li>
-            <li><a href="#">Términos</a></li>
-          </ul>
+            <h3 class="feature-card__title">Conocimiento Total</h3>
+            <p class="feature-card__body">Aprende de tus propios documentos. Aurelia memoriza a la perfección tus
+              tratamientos, precios y reglas corporativas para guiar al paciente siempre de manera correcta.</p>
+          </div>
         </div>
       </div>
-      <div class="site-footer__bottom">
-        <p>&copy; <span id="year"></span> Aurelia Inc. Todos los derechos reservados.</p>
-      </div>
-    </footer>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="testimonials-heading" class="section__heading">Lo que dicen las clínicas</h2>
+          <p class="section__subheading">Odontólogos y gerentes que ya automatizaron sus citas y procesos con Aurelia.
+          </p>
+        </div>
+
+        <div class="testimonials__grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Desde que usamos Aurelia, nuestros espacios vacíos por cancelaciones se
+              redujeron al 2%. El asistente detecta cancelaciones por WhatsApp y automáticamente le ofrece el lugar al
+              siguiente paciente en lista de espera."</p>
+            <div class="testimonial-card__author">
+              <div class="author-info">
+                <span class="author-name">Dra. Mónica Silva</span>
+                <span class="author-role">Directora Médica, OdontoSalud</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Al principio dudaba que un sistema pudiera entender nuestros servicios,
+              pero le pasamos nuestras listas de precios y manuales. Ahora Aurelia le explica perfectamente a los
+              pacientes la diferencia y los costos entre una endodoncia y una resina sin equivocarse. Es brutal."</p>
+            <div class="testimonial-card__author">
+              <div class="author-info">
+                <span class="author-name">Dr. Fernando Aguilar</span>
+                <span class="author-role">Fundador, Clínicas Aguilar</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Teníamos a dos recepcionistas colapsadas contestando mensajes agendando
+              citas. Aurelia ahora maneja el 85% de los mensajes de WhatsApp y solo transfiere al humano los problemas
+              muy particulares."</p>
+            <div class="testimonial-card__author">
+              <div class="author-info">
+                <span class="author-name">Alejandra Ríos</span>
+                <span class="author-role">Gerente Operativa, Sonrisas Flex</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="pricing-heading" class="section__heading">Planes para tu escala</h2>
+          <p class="section__subheading">Desde un consultorio independiente hasta cadenas y franquicias.</p>
+        </div>
+
+        <div class="pricing__grid">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <h3 class="pricing-card__title">Clínica Única</h3>
+            <div class="pricing-card__price">$99 <span class="period">/mes</span></div>
+            <p class="pricing-card__desc">Ideal para centros odontológicos e independientes.</p>
+            <ul class="pricing-card__features">
+              <li>1 Ubicación</li>
+              <li>Hasta 5 Especialistas</li>
+              <li>Integración con WhatsApp</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--full">Comenzar</a>
+          </div>
+
+          <!-- Pro Plan -->
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Recomendado</div>
+            <h3 class="pricing-card__title">Cadena Regional</h3>
+            <div class="pricing-card__price">$249 <span class="period">/mes</span></div>
+            <p class="pricing-card__desc">Para grupos en crecimiento que requieren optimización.</p>
+            <ul class="pricing-card__features">
+              <li>Hasta 5 Sucursales</li>
+              <li>Agendas Unificadas</li>
+              <li>Respuestas basadas en tus manuales</li>
+              <li>Estadísticas de pacientes</li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--full">Contactar</a>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="pricing-card">
+            <h3 class="pricing-card__title">Franquicia</h3>
+            <div class="pricing-card__price">A medida</div>
+            <p class="pricing-card__desc">Para grandes operaciones multinacionales y corporativas.</p>
+            <ul class="pricing-card__features">
+              <li>Sucursales Ilimitadas</li>
+              <li>Asistente ajustado a la marca corporativa</li>
+              <li>Integración con Sistemas ERPs</li>
+              <li>Manager de Éxito Dedicado</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--full">Hablar con Ventas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-section__inner">
+        <h2 class="cta-section__heading">¿Listo para llenar tu agenda dental sin esfuerzo?</h2>
+        <p class="cta-section__subheading">Moderniza la experiencia de tus pacientes en todos tus consultorios hoy
+          mismo.</p>
+        <a href="#demo" class="btn btn--primary btn--lg">Agendar Demo Gratuita -></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <a href="#" class="site-footer__logo">Aurelia</a>
+        <p class="site-footer__desc">Inteligencia Artificial especializada para el sector odontológico.</p>
+      </div>
+      <div class="site-footer__col">
+        <h4 class="site-footer__heading">Producto</h4>
+        <ul class="site-footer__links">
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Integraciones</a></li>
+          <li><a href="#">Precios</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4 class="site-footer__heading">Compañía</h4>
+        <ul class="site-footer__links">
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Carreras</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h4 class="site-footer__heading">Legal</h4>
+        <ul class="site-footer__links">
+          <li><a href="#legal-modal" class="legal-trigger">Privacidad</a></li>
+          <li><a href="#legal-modal" class="legal-trigger">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; <span id="year"></span> Aurelia Inc. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="legal-modal" class="modal">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal__header">
+        <h2 id="modal-title" class="modal__title">Legal y Privacidad</h2>
+        <button id="modal-close" class="modal__close" aria-label="Cerrar modal">&times;</button>
+      </header>
+      <main id="modal-content" class="modal__content">
+        <h3>DOCUMENTO LEGAL - Política de Protección de Datos</h3>
+        <p><strong>Versión:</strong> 1.0.0 | <strong>Última actualización:</strong> Marzo 2026 | <strong>Vigente</strong></p>
+        <p>En Aurelia tomamos muy en serio la privacidad de las personas que interactúan con nuestra plataforma. Este documento explica de forma clara y transparente qué datos personales recopilamos, por qué los usamos y cuáles son tus derechos.</p>
+        <p>¿A quién aplica esta política? A cualquier persona física cuyos datos sean procesados a través de nuestra plataforma, ya sea como usuario final (cliente que interactúa vía WhatsApp), como administrador de una empresa registrada, o como visitante de nuestra web.</p>
+
+        <h3>01. Responsable del Tratamiento</h3>
+        <p>El responsable del tratamiento de tus datos personales es: <strong>Aurelia</strong> — [Nombre legal de tu empresa].<br> <strong>País:</strong> [Ecuador / País correspondiente].<br> <strong>Privacidad:</strong> privacidad@aurelia.app</p>
+
+        <h3>02. Datos que Recopilamos</h3>
+        <p>Recopilamos únicamente los datos estrictamente necesarios para prestar el servicio:</p>
+        <ul>
+          <li><strong>Usuarios finales de WhatsApp:</strong> Teléfono, número de perfil, contenido de mensajes, comprobantes, inferencias de sistema.</li>
+          <li><strong>Administradores:</strong> Nombre, correo, configuraciones del asistente.</li>
+          <li><strong>Documentos:</strong> Logs, conexiones Socket.IO, metadatos de documentos subidos.</li>
+        </ul>
+
+        <h3>03. Finalidades y Base Legal</h3>
+        <p>Responder automáticamente a clientes finales en nombre de la empresa contratante, generar respuestas inteligentes (RAG), gestionar comprobantes e iterar el rendimiento del modelo mediante la <strong>ejecución de contrato</strong> y el <strong>consentimiento activo</strong>.</p>
+        <p>Conservamos datos durante la vigencia del servicio. Las imágenes de comprobantes se retienen hasta 12 meses como registro transaccional.</p>
+
+        <h3>04. Compartición y Transferencias con Terceros</h3>
+        <p>Para prestar el servicio técnico compartimos datos estrictamente configurados mediante contratos de DPA (Data Processing Agreements) con Infraestructuras Terceras (Meta Platforms, Microsoft Azure OpenAI, Groq, Cloudinary, y Google OAuth).</p>
+
+        <h3>05. Seguridad y Derechos</h3>
+        <p>Tus credenciales están protegidas mediante hash bcrypt y cifrado en tránsito HTTPS. Además, los administradores y usuarios pueden ejercer Derechos de Acceso, Rectificación, Limitación y Supresión contactando formalmente a <strong>privacidad@aurelia.app</strong>.</p>
+      </main>
+    </div>
+  </div>
+
+  <script src="Js/script.js"></script>
+</body>
+
 </html>
