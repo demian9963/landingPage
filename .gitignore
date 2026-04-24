@@ -1,0 +1,28 @@
+# Carpeta de documentación local (tal como solicitaste)
+doc/
+Manual de Marca/
+
+# Dependencias Node (por si en el futuro se implementa un bundler como Vite o Webpack)
+node_modules/
+
+# Archivos propios del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configuraciones de editores de código (opcional subirlos, comúnmente se ignoran)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos de depuración y logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+logs/
+*.log

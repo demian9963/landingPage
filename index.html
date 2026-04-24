@@ -5,11 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Aurelia - Asistente virtual inteligente para cadenas odontológicas. Agenda, reagenda y cancela citas automáticamente." />
-  <title>Aurelia | Chatbot para Odontologías</title>
+    content="Aurelia - Asistente virtual inteligente para negocios de servicios. Agenda, reagenda y cancela citas o reservas automáticamente." />
+  <title>Aurelia | Chatbot para Negocios de Servicios</title>
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/icono3.png" type="image/png" />
   <!-- Preload fonts for better performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,16 +20,12 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a href="#" class="site-header__logo">
-        <div class="site-header__logo-icon"
-          style="width: 48px; height: 48px; background-color: var(--color-primary); -webkit-mask: url('img/icono.png') no-repeat center / contain; mask: url('img/icono.png') no-repeat center / contain; transform: scale(1.5); margin-right: -4px; margin-left: 4px;">
-        </div>
-        Aurelia
+        <img src="img/logo3.png" alt="Aurelia Logo" style="height: 48px; width: auto; object-fit: contain;" />
       </a>
       <nav class="site-nav" aria-label="Navegación principal">
         <ul class="site-nav__list">
           <li class="site-nav__item"><a href="#features" class="site-nav__link">Características</a></li>
-          <li class="site-nav__item"><a href="#pricing" class="site-nav__link">Precios</a></li>
-          <li class="site-nav__item"><a href="#about" class="site-nav__link">Nosotros</a></li>
+          <li class="site-nav__item"><a href="#mission" class="site-nav__link">Misión</a></li>
         </ul>
       </nav>
 
@@ -49,7 +44,7 @@
           </h1>
           <p class="hero__subheading">
             Aurelia es el asistente inteligente que agenda, reagenda y cancela citas por ti. Lee tus propios manuales
-            para responder dudas instantáneamente y domina el funcionamiento exacto de tu clínica.
+            para responder dudas instantáneamente y domina el funcionamiento exacto de tu negocio.
           </p>
           <div class="hero__cta-group">
             <a href="#demo" class="btn btn--primary btn--lg">Solicitar Demo</a>
@@ -87,7 +82,7 @@
         <div class="section__header">
           <h2 id="features-heading" class="section__heading">Tu recepcionista virtual 24/7</h2>
           <p class="section__subheading">
-            Aurelia elimina los tiempos de espera y optimiza la capacidad de tus consultorios de forma automática y
+            Aurelia elimina los tiempos de espera y optimiza la capacidad de tu negocio de forma automática y
             precisa.
           </p>
         </div>
@@ -97,7 +92,7 @@
           <div class="feature-card">
 
             <h3 class="feature-card__title">Agendamiento Inteligente</h3>
-            <p class="feature-card__body">Sincronización en tiempo real con tus agendas odontológicas. Los pacientes
+            <p class="feature-card__body">Sincronización en tiempo real con tus agendas. Los clientes
               reservan su turno directamente por chat.</p>
           </div>
 
@@ -114,7 +109,42 @@
 
             <h3 class="feature-card__title">Conocimiento Total</h3>
             <p class="feature-card__body">Aprende de tus propios documentos. Aurelia memoriza a la perfección tus
-              tratamientos, precios y reglas corporativas para guiar al paciente siempre de manera correcta.</p>
+              servicios, precios y reglas corporativas para guiar al cliente siempre de manera correcta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section about" id="mission" aria-labelledby="mission-heading" style="position: relative; overflow: hidden; padding-block: var(--space-8);">
+      <div class="section__inner">
+        <div style="background: linear-gradient(135deg, var(--color-primary-light) 0%, #2f9ebd 100%); border-radius: var(--radius-xl); padding: clamp(2rem, 5vw, 4rem); display: grid; grid-template-columns: 1fr; gap: var(--space-8); box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
+          
+          <!-- Elementos decorativos de fondo -->
+          <div style="position: absolute; top: -10%; right: -5%; width: 300px; height: 300px; background: rgba(255,255,255,0.15); border-radius: 50%; filter: blur(30px); pointer-events: none;"></div>
+          <div style="position: absolute; bottom: -10%; left: -5%; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%; filter: blur(20px); pointer-events: none;"></div>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); align-items: center; position: relative; z-index: 2;">
+            <!-- Columna Izquierda: Título -->
+            <div>
+              <span style="color: var(--color-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">Aurelia</span>
+              <h2 id="mission-heading" style="color: #ffffff; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; text-transform: uppercase; line-height: 1.05; margin-bottom: 1.5rem; letter-spacing: -0.02em;">
+                Nuestra<br/>Misión
+              </h2>
+              <div style="width: 80px; height: 6px; background-color: var(--color-accent); border-radius: 3px;"></div>
+            </div>
+            
+            <!-- Columna Derecha: Texto -->
+            <div style="color: #ffffff; font-size: 1.15rem; line-height: 1.7; font-weight: 500;">
+              <p style="margin-bottom: 1.5rem; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                En Aurelia, transformamos la gestión operativa de los negocios de servicios. No somos solo un chatbot; somos una capa de inteligencia diseñada para eliminar las barreras entre tu negocio y tus clientes.
+              </p>
+              <div style="background: rgba(255, 255, 255, 0.1); border-left: 4px solid var(--color-accent); padding: var(--space-4); border-radius: 0 var(--radius-md) var(--radius-md) 0; backdrop-filter: blur(5px);">
+                <p style="text-shadow: 0 1px 2px rgba(0,0,0,0.1); margin: 0;">
+                  Nuestra tecnología permite que clínicas, hoteles y centros de servicios operen a su máxima capacidad, garantizando una atención humana en eficiencia pero digital en velocidad.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -124,8 +154,8 @@
     <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
       <div class="section__inner">
         <div class="section__header">
-          <h2 id="testimonials-heading" class="section__heading">Lo que dicen las clínicas</h2>
-          <p class="section__subheading">Odontólogos y gerentes que ya automatizaron sus citas y procesos con Aurelia.
+          <h2 id="testimonials-heading" class="section__heading">Lo que dicen nuestros clientes</h2>
+          <p class="section__subheading">Empresas y gerentes que ya automatizaron sus citas y procesos con Aurelia.
           </p>
         </div>
 
@@ -174,65 +204,13 @@
         </div>
       </div>
     </section>
-    <!-- Pricing Section -->
-    <section class="section pricing" id="pricing" aria-labelledby="pricing-heading">
-      <div class="section__inner">
-        <div class="section__header">
-          <h2 id="pricing-heading" class="section__heading">Planes para tu escala</h2>
-          <p class="section__subheading">Desde un consultorio independiente hasta cadenas y franquicias.</p>
-        </div>
 
-        <div class="pricing__grid">
-          <!-- Basic Plan -->
-          <div class="pricing-card">
-            <h3 class="pricing-card__title">Clínica Única</h3>
-            <div class="pricing-card__price">$99 <span class="period">/mes</span></div>
-            <p class="pricing-card__desc">Ideal para centros odontológicos e independientes.</p>
-            <ul class="pricing-card__features">
-              <li>1 Ubicación</li>
-              <li>Hasta 5 Especialistas</li>
-              <li>Integración con WhatsApp</li>
-            </ul>
-            <a href="#" class="btn btn--secondary btn--full">Comenzar</a>
-          </div>
-
-          <!-- Pro Plan -->
-          <div class="pricing-card pricing-card--featured">
-            <div class="pricing-card__badge">Recomendado</div>
-            <h3 class="pricing-card__title">Cadena Regional</h3>
-            <div class="pricing-card__price">$249 <span class="period">/mes</span></div>
-            <p class="pricing-card__desc">Para grupos en crecimiento que requieren optimización.</p>
-            <ul class="pricing-card__features">
-              <li>Hasta 5 Sucursales</li>
-              <li>Agendas Unificadas</li>
-              <li>Respuestas basadas en tus manuales</li>
-              <li>Estadísticas de pacientes</li>
-            </ul>
-            <a href="#" class="btn btn--primary btn--full">Contactar</a>
-          </div>
-
-          <!-- Enterprise Plan -->
-          <div class="pricing-card">
-            <h3 class="pricing-card__title">Franquicia</h3>
-            <div class="pricing-card__price">A medida</div>
-            <p class="pricing-card__desc">Para grandes operaciones multinacionales y corporativas.</p>
-            <ul class="pricing-card__features">
-              <li>Sucursales Ilimitadas</li>
-              <li>Asistente ajustado a la marca corporativa</li>
-              <li>Integración con Sistemas ERPs</li>
-              <li>Manager de Éxito Dedicado</li>
-            </ul>
-            <a href="#" class="btn btn--secondary btn--full">Hablar con Ventas</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="cta-section__inner">
-        <h2 class="cta-section__heading">¿Listo para llenar tu agenda dental sin esfuerzo?</h2>
-        <p class="cta-section__subheading">Moderniza la experiencia de tus pacientes en todos tus consultorios hoy
+        <h2 class="cta-section__heading">¿Listo para llenar tu agenda sin esfuerzo?</h2>
+        <p class="cta-section__subheading">Moderniza la experiencia de tus clientes en todos tus canales hoy
           mismo.</p>
         <a href="#demo" class="btn btn--primary btn--lg">Agendar Demo Gratuita -></a>
       </div>
@@ -243,15 +221,16 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <div class="site-footer__col">
-        <a href="#" class="site-footer__logo">Aurelia</a>
-        <p class="site-footer__desc">Inteligencia Artificial especializada para el sector odontológico.</p>
+        <a href="#" class="site-footer__logo">
+          <img src="img/logo3.png" alt="Aurelia Logo" style="height: 32px; width: auto; object-fit: contain;" />
+        </a>
+        <p class="site-footer__desc">Inteligencia Artificial especializada para atención al cliente y ventas.</p>
       </div>
       <div class="site-footer__col">
         <h4 class="site-footer__heading">Producto</h4>
         <ul class="site-footer__links">
           <li><a href="#">Características</a></li>
           <li><a href="#">Integraciones</a></li>
-          <li><a href="#">Precios</a></li>
         </ul>
       </div>
       <div class="site-footer__col">
@@ -284,30 +263,46 @@
       </header>
       <main id="modal-content" class="modal__content">
         <h3>DOCUMENTO LEGAL - Política de Protección de Datos</h3>
-        <p><strong>Versión:</strong> 1.0.0 | <strong>Última actualización:</strong> Marzo 2026 | <strong>Vigente</strong></p>
-        <p>En Aurelia tomamos muy en serio la privacidad de las personas que interactúan con nuestra plataforma. Este documento explica de forma clara y transparente qué datos personales recopilamos, por qué los usamos y cuáles son tus derechos.</p>
-        <p>¿A quién aplica esta política? A cualquier persona física cuyos datos sean procesados a través de nuestra plataforma, ya sea como usuario final (cliente que interactúa vía WhatsApp), como administrador de una empresa registrada, o como visitante de nuestra web.</p>
+        <p><strong>Versión:</strong> 1.0.0 | <strong>Última actualización:</strong> Marzo 2026 |
+          <strong>Vigente</strong>
+        </p>
+        <p>En Aurelia tomamos muy en serio la privacidad de las personas que interactúan con nuestra plataforma. Este
+          documento explica de forma clara y transparente qué datos personales recopilamos, por qué los usamos y cuáles
+          son tus derechos.</p>
+        <p>¿A quién aplica esta política? A cualquier persona física cuyos datos sean procesados a través de nuestra
+          plataforma, ya sea como usuario final (cliente que interactúa vía WhatsApp), como administrador de una empresa
+          registrada, o como visitante de nuestra web.</p>
 
         <h3>01. Responsable del Tratamiento</h3>
-        <p>El responsable del tratamiento de tus datos personales es: <strong>Aurelia</strong> — [Nombre legal de tu empresa].<br> <strong>País:</strong> [Ecuador / País correspondiente].<br> <strong>Privacidad:</strong> privacidad@aurelia.app</p>
+        <p>El responsable del tratamiento de tus datos personales es: <strong>Aurelia</strong> — [Nombre legal de tu
+          empresa].<br> <strong>País:</strong> [Ecuador / País correspondiente].<br> <strong>Privacidad:</strong>
+          privacidad@aurelia.app</p>
 
         <h3>02. Datos que Recopilamos</h3>
         <p>Recopilamos únicamente los datos estrictamente necesarios para prestar el servicio:</p>
         <ul>
-          <li><strong>Usuarios finales de WhatsApp:</strong> Teléfono, número de perfil, contenido de mensajes, comprobantes, inferencias de sistema.</li>
+          <li><strong>Usuarios finales de WhatsApp:</strong> Teléfono, número de perfil, contenido de mensajes,
+            comprobantes, inferencias de sistema.</li>
           <li><strong>Administradores:</strong> Nombre, correo, configuraciones del asistente.</li>
           <li><strong>Documentos:</strong> Logs, conexiones Socket.IO, metadatos de documentos subidos.</li>
         </ul>
 
         <h3>03. Finalidades y Base Legal</h3>
-        <p>Responder automáticamente a clientes finales en nombre de la empresa contratante, generar respuestas inteligentes (RAG), gestionar comprobantes e iterar el rendimiento del modelo mediante la <strong>ejecución de contrato</strong> y el <strong>consentimiento activo</strong>.</p>
-        <p>Conservamos datos durante la vigencia del servicio. Las imágenes de comprobantes se retienen hasta 12 meses como registro transaccional.</p>
+        <p>Responder automáticamente a clientes finales en nombre de la empresa contratante, generar respuestas
+          inteligentes (RAG), gestionar comprobantes e iterar el rendimiento del modelo mediante la <strong>ejecución de
+            contrato</strong> y el <strong>consentimiento activo</strong>.</p>
+        <p>Conservamos datos durante la vigencia del servicio. Las imágenes de comprobantes se retienen hasta 12 meses
+          como registro transaccional.</p>
 
         <h3>04. Compartición y Transferencias con Terceros</h3>
-        <p>Para prestar el servicio técnico compartimos datos estrictamente configurados mediante contratos de DPA (Data Processing Agreements) con Infraestructuras Terceras (Meta Platforms, Microsoft Azure OpenAI, Groq, Cloudinary, y Google OAuth).</p>
+        <p>Para prestar el servicio técnico compartimos datos estrictamente configurados mediante contratos de DPA (Data
+          Processing Agreements) con Infraestructuras Terceras (Meta Platforms, Microsoft Azure OpenAI, Groq,
+          Cloudinary, y Google OAuth).</p>
 
         <h3>05. Seguridad y Derechos</h3>
-        <p>Tus credenciales están protegidas mediante hash bcrypt y cifrado en tránsito HTTPS. Además, los administradores y usuarios pueden ejercer Derechos de Acceso, Rectificación, Limitación y Supresión contactando formalmente a <strong>privacidad@aurelia.app</strong>.</p>
+        <p>Tus credenciales están protegidas mediante hash bcrypt y cifrado en tránsito HTTPS. Además, los
+          administradores y usuarios pueden ejercer Derechos de Acceso, Rectificación, Limitación y Supresión
+          contactando formalmente a <strong>privacidad@aurelia.app</strong>.</p>
       </main>
     </div>
   </div>
