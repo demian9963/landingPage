@@ -22,7 +22,7 @@ jobs:
         run: docker rm landing || true
 
       - name: Run new container
-        run: docker run -d --restart unless-stopped -p 80:80 --name landing landing
+        run: docker run -d --restart unless-stopped -p 1234:80 --name landing landing
 
       - name: Clean up old images
         run: docker image prune -f
