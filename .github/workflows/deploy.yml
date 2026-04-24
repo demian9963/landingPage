@@ -1,0 +1,28 @@
+name: Deploy Landing Page
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t landing .
+
+      - name: Stop old container
+        run: docker stop landing || true
+
+      - name: Remove old container
+        run: docker rm landing || true
+
+      - name: Run new container
+        run: docker run -d --restart unless-stopped -p 80:80 --name landing landing
+
+      - name: Clean up old images
+        run: docker image prune -f
