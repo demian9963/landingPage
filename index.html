@@ -85,10 +85,18 @@
                   <span class="carousel-dot active" data-slide="0"></span>
                   <span class="carousel-dot" data-slide="1"></span>
                 </div>
+                <!-- Botón para silenciar/activar sonido -->
+                <button id="audioToggle" class="audio-toggle is-hidden" aria-label="Silenciar/Activar sonido">
+                  🔊
+                </button>
               </div>
             </div>
             <div class="monitor-stand"></div>
             <div class="monitor-base"></div>
+            <!-- Audio que se reproduce al estar en foco -->
+            <audio id="monitorAudio" loop>
+              <source src="img/Tu_aliado_constante.mp3" type="audio/mpeg" />
+            </audio>
           </div>
         </div>
       </div>

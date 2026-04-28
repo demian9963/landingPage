@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initModal();
   initCarousel();
+  initAudioObserver();
 });
 
 /**
@@ -151,4 +152,75 @@ function initCarousel() {
 
   // Iniciar el carrusel
   startAutoplay();
+}
+
+/**
+ * Controla la reproducción del audio basado en la visibilidad del monitor.
+ * Nota: Los navegadores modernos bloquean el audio automático sin interacción previa del usuario.
+ */
+function initAudioObserver() {
+  const monitor = document.querySelector('.monitor-mockup');
+  const audio = document.getElementById('monitorAudio');
+  const audioToggle = document.getElementById('audioToggle');
+  
+  if (!monitor || !audio || !audioToggle) return;
+
+  let isMonitorVisible = false;
+  let isActivated = false;
+  let isMuted = false;
+
+  const toggleAudioByVisibility = () => {
+    if (isActivated && !isMuted) {
+      if (isMonitorVisible) {
+        audio.play().catch(e => console.log("Error al reproducir:", e));
+      } else {
+        audio.pause();
+      }
+    }
+  };
+
+  // Activar audio al hacer clic en el monitor (solo la primera vez)
+  monitor.addEventListener('click', (e) => {
+    // Si el clic fue en el botón de mute, no ejecutar la activación del monitor
+    if (e.target.closest('#audioToggle')) return;
+
+    if (!isActivated) {
+      isActivated = true;
+      isMuted = false;
+      audio.muted = false;
+      audio.play().catch(e => console.log("Permiso de audio denegado:", e));
+      audioToggle.classList.remove('is-hidden');
+      audioToggle.textContent = '🔊';
+      console.log("Audio del monitor activado por el usuario.");
+    }
+  });
+
+  // Lógica del botón de mute
+  audioToggle.addEventListener('click', (e) => {
+    e.stopPropagation(); // Evitar disparar el click del monitor
+    isMuted = !isMuted;
+    audio.muted = isMuted;
+    
+    if (isMuted) {
+      audio.pause();
+      audioToggle.textContent = '🔇';
+    } else {
+      audioToggle.textContent = '🔊';
+      if (isMonitorVisible) audio.play();
+    }
+  });
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.3
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      isMonitorVisible = entry.isIntersecting;
+      toggleAudioByVisibility();
+    });
+  }, observerOptions);
+
+  observer.observe(monitor);
 }
