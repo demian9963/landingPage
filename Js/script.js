@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initYearStamp();
   initSmoothScroll();
   initModal();
+  initCarousel();
 });
 
 /**
@@ -77,4 +78,77 @@ function initModal() {
       closeModal();
     }
   });
+}
+
+/**
+ * Inicializa el carrusel de videos en el mockup del monitor.
+ */
+function initCarousel() {
+  const track = document.getElementById('carouselTrack');
+  const prevBtn = document.getElementById('carouselPrev');
+  const nextBtn = document.getElementById('carouselNext');
+  const dots = document.querySelectorAll('.carousel-dot');
+  
+  if (!track) return;
+
+  let currentSlide = 0;
+  const slideCount = dots.length;
+  let autoplayInterval;
+
+  function goToSlide(index) {
+    if (index < 0) index = slideCount - 1;
+    if (index >= slideCount) index = 0;
+    
+    currentSlide = index;
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayInterval = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000); // Cambia cada 5 segundos
+  }
+
+  function stopAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+    }
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+      startAutoplay(); // Reiniciar el temporizador al interactuar
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+      startAutoplay();
+    });
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+      goToSlide(slideIndex);
+      startAutoplay();
+    });
+  });
+
+  // Pausar el autoplay si el usuario pasa el mouse sobre el carrusel
+  const carousel = document.getElementById('monitorCarousel');
+  if (carousel) {
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+  }
+
+  // Iniciar el carrusel
+  startAutoplay();
 }

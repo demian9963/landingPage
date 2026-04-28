@@ -64,10 +64,28 @@
           <!-- Monitor Mockup Container -->
           <div class="monitor-mockup">
             <div class="monitor-screen">
-              <video autoplay loop muted playsinline class="monitor-video">
-                <source src="img/Animación_Asistente.mp4" type="video/mp4" />
-                Tu navegador no soporta el tag de video.
-              </video>
+              <div class="monitor-carousel" id="monitorCarousel">
+                <div class="carousel-track" id="carouselTrack">
+                  <div class="carousel-slide">
+                    <video autoplay loop muted playsinline class="monitor-video">
+                      <source src="img/Animación_Asistente.mp4" type="video/mp4" />
+                      Tu navegador no soporta el tag de video.
+                    </video>
+                  </div>
+                  <div class="carousel-slide">
+                    <video autoplay loop muted playsinline class="monitor-video">
+                      <source src="img/Animación_Asistente2.mp4" type="video/mp4" />
+                      Tu navegador no soporta el tag de video.
+                    </video>
+                  </div>
+                </div>
+                <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Video anterior">&#10094;</button>
+                <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Siguiente video">&#10095;</button>
+                <div class="carousel-dots" id="carouselDots">
+                  <span class="carousel-dot active" data-slide="0"></span>
+                  <span class="carousel-dot" data-slide="1"></span>
+                </div>
+              </div>
             </div>
             <div class="monitor-stand"></div>
             <div class="monitor-base"></div>
